@@ -1,0 +1,5 @@
+# ignore compiled assets
+node_modules
+public
+
+.vscode

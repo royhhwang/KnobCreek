@@ -1,0 +1,16 @@
+// Convert pixels to rems
+// usage: rem(32) or rem(32px)
+// example: font-size: rem(24);
+// example: max-width: rem(1200);
+
+@function rem($size, $base: 16px) {
+  @if (unitless($size)) {
+    $size: $size * 1px;
+  }
+
+  @if (unitless($base)) {
+    $base: $base * 1px;
+  }
+
+  @return $size / $base * 1rem;
+}

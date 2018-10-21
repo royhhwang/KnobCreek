@@ -1,0 +1,7 @@
+@mixin hover {
+    [data-whatinput="keyboard"] &:focus,
+    [data-whatinput="mouse"] &:hover,
+    [data-whatinput="mouse"] &:active {
+        @content;
+    }
+}

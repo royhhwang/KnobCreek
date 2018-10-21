@@ -1,0 +1,12 @@
+// antialised text for use on dark backgrounds
+@mixin smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+@mixin unsmooth {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-smoothing: auto;
+}

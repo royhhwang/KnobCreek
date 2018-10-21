@@ -1,0 +1,30 @@
+//Variables
+$base-font-size: 14px;
+$title-font-size: 35px;
+$heading-font-size: 19px;
+$subheading-font-size: 18px;
+$subheading2-font-size: 17px;
+$subpara-font-size: 12px;
+
+// Imports
+@mixin font-face($name, $filename, $style: normal, $weight: normal) {
+  @font-face {
+    font-family: #{$name};
+    font-style: $style;
+    font-weight: $weight;
+    src: url("../static/fonts/#{$name}/#{$filename}.eot?#iefix") format("embedded-opentype"), url("../static/fonts/#{$name}/#{$filename}.woff") format("woff"), url("../static/fonts/#{$name}/#{$filename}.ttf") format("truetype");
+    src: url("../static/fonts/#{$name}/#{$filename}.ttf");
+  }
+}
+
+@include font-face('OpenSans', 'OpenSans-Regular', 'normal', 400);
+
+// Mixins
+@mixin opensans {
+  font-family: OpenSans, Arial, Verdana, sans-serif;
+}
+
+@mixin color-white {
+  @include smooth;
+  color: #fff;
+}

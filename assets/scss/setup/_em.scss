@@ -1,0 +1,16 @@
+// Convert pixel size to ems
+// usage: em(32) or em(32px)
+// example: font-size: em(24);
+// example: max-width: em(1200);
+
+@function em($size, $base: 16px) {
+  @if unitless($size) {
+    $size: $size * 1px;
+  }
+
+  @if unitless($base) {
+    $base: $base * 1px;
+  }
+
+  @return $size / $base * 1em;
+}

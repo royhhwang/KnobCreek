@@ -1,0 +1,58 @@
+body {
+  @include opensans;
+
+  background-color: #1e1e1e;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: $title-font-size;
+
+  @include breakpoint("small") {
+    font-size: 60px;
+  }
+
+  @include breakpoint("medium") {
+    font-size: 70px;
+  }
+}
+
+h2 {
+  font-size: $heading-font-size;
+
+  @include breakpoint("small") {
+    font-size: 35px;
+  }
+}
+
+h3 {
+  font-size: $subheading-font-size;
+
+  @include breakpoint("small") {
+      font-size: 21px;
+  }
+
+  @include breakpoint("medium") {
+      font-size: 28px;
+  }
+}
+
+h4 {
+  font-size: $subheading2-font-size;
+
+  @include breakpoint("small") {
+      font-size: 18px;
+  }
+
+  @include breakpoint("medium") {
+      font-size: 24px;
+  }
+}
+
+.subpara-font {
+  font-size: $subpara-font-size;
+
+  @include breakpoint("small") {
+      font-size: 13px;
+  }
+}

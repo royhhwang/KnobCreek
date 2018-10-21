@@ -1,0 +1,36 @@
+// Breakpoints
+$breakpoints: (
+  "mobile"  : "(min-width:320px)",
+  "small"   : "(min-width:600px)",
+  "medium"  : "(min-width: 1000px)",
+  "large"   : "(min-width: 1440px)",
+);
+
+// Functions
+@function bp($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return map-get($breakpoints, $key);
+  }
+
+  @warn "Unknown '#{$key}' in $breakpoints.";
+  @return null;
+};
+
+// Mixins
+@mixin breakpoint($expression) {
+  @if (str-index($expression, 'landscape')) {
+    @media (bp($expression)) and (orientation: landscape) {
+      @content;
+    }
+  } @else {
+    @media (bp($expression)) {
+      @content;
+    }
+  }
+};
+
+@mixin range($start, $end) {
+  @media (bp($start)) and (bp($end)) {
+    @content;
+  }
+};
