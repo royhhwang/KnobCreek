@@ -1,18 +1,18 @@
+var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
+var cache = require('gulp-cache');
+var cssnano = require('gulp-cssnano');
+var del = require('del');
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
-var sourcemaps = require('gulp-sourcemaps');
+var htmlmin = require('gulp-htmlmin');
+var imagemin = require('gulp-imagemin');
+var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sassGlob = require('gulp-sass-glob');
-var autoprefixer = require('gulp-autoprefixer');
-var cssnano = require('gulp-cssnano');
-var browserSync = require('browser-sync').create();
-var htmlmin = require('gulp-htmlmin');
-var webpack = require('webpack-stream');
+var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
-var runSequence = require('run-sequence');
-var del = require('del');
+var webpack = require('webpack-stream');
 
 const handleError = function (err) {
     console.error(err);
@@ -82,8 +82,14 @@ gulp.task('images', function () {
         .pipe(gulp.dest('public/images'))
 });
 
+//FONTS
+gulp.task('fonts', function () {
+    return gulp.src('assets/static/fonts/*.ttf')
+    .pipe(gulp.dest('public/fonts'))
+})
+
 //WATCH - DEVELOPMENT
-gulp.task('watch', ['css', 'html', 'javascript', 'images', 'browserSync'], function () {
+gulp.task('watch', ['css', 'html', 'javascript', 'images', 'fonts', 'browserSync'], function () {
     gulp.watch('assets/scss/**/*.scss', ['css']);
     gulp.watch('assets/html/*.html', ['html']);
 })

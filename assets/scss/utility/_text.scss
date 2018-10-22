@@ -45,15 +45,26 @@ nav {
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
   height: 45em;
-  letter-spacing: rem(1.5);
-  line-height: rem(25);
-  padding-top: rem(40);
+  letter-spacing: rem(1.2);
+  line-height: rem(26);
+  padding-top: rem(50);
   position: absolute;
   text-align: center;
   width: 100%;
+
+  p {
+    padding-top: rem(7);
+  }
 }
 
 .landing-header {
   letter-spacing: rem(2);
   line-height: rem(40);
+}
+
+.img__center {
+  position: absolute;
+  height:70%;
+  bottom: -26%;
+  left:16%;
 }

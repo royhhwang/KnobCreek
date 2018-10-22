@@ -1,5 +1,5 @@
 body {
-  @include opensans__light;
+  @include opensans;
 
   background-color: #1e1e1e;
   font-size: 14px;
@@ -29,11 +29,11 @@ h3 {
   font-size: $subheading-font-size;
 
   @include breakpoint("small") {
-      font-size: 21px;
+    font-size: 21px;
   }
 
   @include breakpoint("medium") {
-      font-size: 28px;
+    font-size: 28px;
   }
 }
 
@@ -41,11 +41,11 @@ h4 {
   font-size: $subheading2-font-size;
 
   @include breakpoint("small") {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   @include breakpoint("medium") {
-      font-size: 24px;
+    font-size: 24px;
   }
 }
 
@@ -53,6 +53,6 @@ h4 {
   font-size: $subpara-font-size;
 
   @include breakpoint(small) {
-      font-size: 13px;
+    font-size: 13px;
   }
 }

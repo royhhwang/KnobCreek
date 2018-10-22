@@ -7,29 +7,16 @@ $subheading2-font-size: 17px;
 $subpara-font-size: 12px;
 
 // Imports
-@mixin font-face($name, $filename, $style: normal, $weight: normal) {
-  @font-face {
-    font-family: #{$name};
-    font-style: $style;
-    font-weight: $weight;
-    src: url("../static/fonts/#{$name}/#{$filename}.eot?#iefix")
-        format("embedded-opentype"),
-      url("../static/fonts/#{$name}/#{$filename}.woff") format("woff"),
-      url("../static/fonts/#{$name}/#{$filename}.ttf") format("truetype");
-    src: url("../static/fonts/#{$name}/#{$filename}.ttf");
-  }
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/OpenSans-Regular.ttf');
 }
-
-@include font-face(OpenSans, "OpenSans-Regular", "normal", 400);
-@include font-face(OpenSansLite, "OpenSans-Light", "normal", 400);
 
 // Mixins
 @mixin opensans {
   font-family: OpenSans, Arial, Verdana, sans-serif;
 }
-@mixin opensans__light {
-  font-family: OpenSansLite, Arial, Verdana, sans-serif;
-}
+
 @mixin color-white {
   @include smooth;
   color: #fff;
