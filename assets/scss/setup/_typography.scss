@@ -11,12 +11,18 @@ $subpara-font-size: 12px;
   font-family: OpenSans;
   src: url('../fonts/OpenSans-Regular.ttf');
 }
+@font-face {
+  font-family: OpenSansLight;
+  src: url('../fonts/OpenSans-Light.ttf');
+}
 
 // Mixins
 @mixin opensans {
   font-family: OpenSans, Arial, Verdana, sans-serif;
 }
-
+@mixin opensanslite {
+  font-family: OpenSansLight, Arial, Verdana, sans-serif;
+}
 @mixin color-white {
   @include smooth;
   color: #fff;
