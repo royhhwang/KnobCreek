@@ -79,7 +79,7 @@ gulp.task('javascript', function () {
 gulp.task('images', function () {
     return gulp.src('assets/static/images/**/*.+(png|jpg|gif|svg)')
         .pipe(gulpif(global.production, cache(imagemin())))
-        .pipe(gulp.dest('public/img'))
+        .pipe(gulp.dest('public/images'))
 });
 
 //WATCH - DEVELOPMENT

@@ -1,4 +1,59 @@
 .header {
-  text-align: center;
   padding: rem(5);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  .knob-logo {
+    border: solid rem(10) transparent;
+    height: rem(75);
+    width: rem(75);
+  }
+
+  #facebook {
+    height: rem(25);
+    margin-top: rem(23);
+    width: rem(25);
+  }
+
+  #twitter {
+    height: rem(20);
+    margin-top: rem(23);
+    width: rem(25);
+  }
+}
+
+.img-base {
+  background-image: url("../images/splash/bourbon-campfire.jpg");
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  max-width: 1440px;
+  position: relative;
+  width: 100vw;
+}
+
+.para-abs-location {
+  @include smooth;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  height: 45em;
+  letter-spacing: rem(1);
+  line-height: rem(25);
+  padding-top: rem(40);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.landing-header {
+  letter-spacing: rem(2);
+  line-height: rem(40);
 }

@@ -1,9 +1,9 @@
 // Breakpoints
 $breakpoints: (
-  "mobile"  : "(min-width:320px)",
-  "small"   : "(min-width:600px)",
-  "medium"  : "(min-width: 1000px)",
-  "large"   : "(min-width: 1440px)",
+  "mobile"  : "min-width:320px",
+  "small"   : "min-width:600px",
+  "medium"  : "min-width: 1000px",
+  "large"   : "min-width: 1440px",
 );
 
 // Functions
@@ -19,11 +19,11 @@ $breakpoints: (
 // Mixins
 @mixin breakpoint($expression) {
   @if (str-index($expression, 'landscape')) {
-    @media (bp($expression)) and (orientation: landscape) {
+    @media screen and (bp($expression)) and (orientation: landscape) {
       @content;
     }
   } @else {
-    @media (bp($expression)) {
+    @media screen and (bp($expression)) {
       @content;
     }
   }
