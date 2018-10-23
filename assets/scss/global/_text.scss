@@ -1,5 +1,5 @@
 body {
-  @include opensanslite;
+  @include opensans;
 
   background-color: #1e1e1e;
   font-size: 14px;
@@ -55,4 +55,8 @@ h4 {
   @include breakpoint(small) {
     font-size: 13px;
   }
+}
+
+.__centered {
+  text-align: center;
 }
