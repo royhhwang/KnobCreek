@@ -2,12 +2,16 @@ header {
   padding: rem(5);
 }
 
+.sticky-container {
+  height: 100%;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  width: 100%;
+  height: rem(75);
+  z-index: 5;
 
   .knob-logo {
     border: solid rem(10) transparent;
@@ -103,13 +107,6 @@ aside {
 }
 
 .__card {
-  background-color: white;
-  width: 82%;
-  height: 49vh;
-  position: relative;
-  top: rem(-50);
-  padding-top: rem(50);
-
   h2 {
     line-height: rem(30);
     padding: 0 rem(30) rem(5) rem(30);
