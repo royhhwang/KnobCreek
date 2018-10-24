@@ -57,19 +57,14 @@ h4 {
   }
 }
 
-.__centered {
+.--centered {
   text-align: center;
 }
 
-.__sticky {
+.__sticky nav {
   position: fixed;
   top: 0;
-  height: 10%;
   background-color: #1e1e1e;
-}
-
-.__main {
-  margin-top: rem(75);
 }
 
 .__card {

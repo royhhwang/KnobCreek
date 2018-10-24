@@ -12,9 +12,9 @@
 <body>
 
   <div class="wrapper">
-    <header class="subpara--font bg--darkTan __centered">Sponsored By</header>
+    <header class="subpara--font bg--darkTan --centered">Sponsored By</header>
     <div class="sticky-container">
-      <nav id="nav">
+      <nav class="sticky-nav">
         <a href="/"><img src="images/svg/KnobCreek.svg" alt="KnobCreek Logo" class="knob-logo"></a>
         <a href="#top"><img src="images/svg/Video.svg" alt="Facebook Logo" class="knob-logo"></a>
         <div>
@@ -55,8 +55,8 @@
       </nav>
     </div>
 
-    <main id="main">
-      <div class="main-display __centered">
+    <main>
+      <div class="main-display --centered">
         <h1 class="landing-header">Maple Never Tasted So Good</h1>
         <p>
           We blend this bourbon with natural smoked maple flavors for a unique, smoky sweetness. Full bodied,
@@ -72,7 +72,7 @@
     <section class="bg--darkTan">
       <aside>
         <img src="images/splash/bourbon-mug.jpg" alt="Knob Creek slow poured into a striking blue mug">
-        <div class="__card __centered">
+        <div class="__card --centered">
           <img src="images/svg/Article.svg" alt="Article Icon" />
           <h5 class="subpara--font">NOVEMBER 20</h5>
           <h2>Too Much Flavor For Four Walls To Hold</h2>
@@ -84,12 +84,14 @@
       </aside>
     </section>
 
-    <article class="__centered">
+    <article class="--centered" id="articles">
       <h3>Recent Articles</h3>
       <p>There are only so many hours in a day, so we make every glass count. We
         craft full-flavored whiskey for those who find a way to get the most out of every minute of every
         day...</p>
     </article>
+
+    <div id="article-template"></div>
 
     <footer class="subpara--font">
       <div>
@@ -132,25 +134,8 @@
     </footer>
   </div>
 
+  <script src="javascript/bundle.js" type="text/javascript"></script>
 
-  <script>
-    window.onscroll = function () { stickyNav() };
-
-    var nav = document.getElementById('nav');
-    var main = document.getElementById('main');
-    var sticky = nav.offsetTop;
-
-    function stickyNav() {
-      if (window.pageYOffset > sticky) {
-        nav.classList.add("__sticky");
-        main.classList.add("__main");
-      }
-      else {
-        nav.classList.remove("__sticky");
-        main.classList.remove("__main");
-      }
-    }
-  </script>
 </body>
 
 </html>

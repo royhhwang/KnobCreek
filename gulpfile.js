@@ -51,11 +51,12 @@ gulp.task('html', function () {
 
 //JAVASCRIPT
 gulp.task('javascript', function () {
-    return gulp.src('assets/js/*.js')
+    return gulp.src('assets/javascript/*.js')
         .pipe(webpack({
             watch: global.production ? false : true,
+            mode: 'production',
             module: {
-                loaders: [
+                rules: [
                     {
                         test: /\.js$/,
                         loader: 'babel-loader',
@@ -68,10 +69,11 @@ gulp.task('javascript', function () {
             output: {
                 filename: 'bundle.js',
             },
+            watch: false,
         }))
         .on('error', handleError)
         .pipe(gulpif(global.production, uglify()))
-        .pipe(gulp.dest('public/js'))
+        .pipe(gulp.dest('public/javascript'))
         .pipe(browserSync.stream())
 });
 
@@ -85,13 +87,14 @@ gulp.task('images', function () {
 //FONTS
 gulp.task('fonts', function () {
     return gulp.src('assets/static/fonts/*.ttf')
-    .pipe(gulp.dest('public/fonts'))
+        .pipe(gulp.dest('public/fonts'))
 })
 
 //WATCH - DEVELOPMENT
 gulp.task('watch', ['css', 'html', 'javascript', 'images', 'fonts', 'browserSync'], function () {
     gulp.watch('assets/scss/**/*.scss', ['css']);
-    gulp.watch('assets/html/*.html', ['html']);
+    gulp.watch('assets/html/**/*.html', ['html']);
+    gulp.watch('assets/javascript/**/*.js', ['javascript']);
 })
 
 //CLEAN - PRODUCTION
