@@ -61,20 +61,57 @@ h4 {
   text-align: center;
 }
 
-.__sticky nav {
-  position: fixed;
-  top: 0;
-  max-width: 1440px;
-  background-color: #1e1e1e;
+.__featured {
+  width: 82%;
+  height: 49vh;
+  position: relative;
+  top: rem(-50);
+  padding-top: rem(50);
+  transition:background-color 0.2s ease-in-out;
+  -webkit-transition:background-color 0.2s ease-in-out;
+
+  h2 {
+    line-height: rem(30);
+    padding: 0 rem(30) rem(5) rem(30);
+  }
+
+  p {
+    line-height: rem(25);
+    padding: 0 rem(10) rem(12) rem(10);
+  }
+
+  h5 {
+    letter-spacing: rem(2);
+    font-weight: bolder;
+    padding-bottom: rem(5);
+  }
+
+  a {
+    color: color(deep-red);
+    font-weight: bolder;
+  }
+
+  &:hover {
+    @include smooth;
+    background-color: black;
+    color: white;
+
+
+    .__circle div {
+      background-color: black;
+    }
+  }
 }
 
 .__card {
-  background-color: white;
+  background-color: color(white-tan);
   height: 100%;
   padding: rem(20) 0 rem(10) 0;
   margin-bottom: rem(22);
   position: relative;
   top: rem(-2);
+  transition:background-color 0.2s ease-in-out;
+  -webkit-transition:background-color 0.2s ease-in-out;
 
   h3 {
     line-height: rem(27);
@@ -96,6 +133,17 @@ h4 {
     color: color(deep-red);
     font-weight: bolder;
   }
+
+  &:hover {
+    @include smooth;
+    background-color: black;
+    color: white;
+
+
+    .__circle div {
+      background-color: black;
+    }
+  }
 }
 
 .__image {
@@ -109,7 +157,7 @@ h4 {
   height: rem(25);
   position: relative;
   top: rem(-36);
-  z-index: 5;
+  z-index: 2;
 }
 
 .__medium-icon {
@@ -126,6 +174,8 @@ h4 {
   top: rem(-27);
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  transition:background-color 0.5s ease-in-out;
+  -webkit-transition:background-color 0.5s ease-in-out;
 
   div {
     width: rem(50);
@@ -133,7 +183,7 @@ h4 {
     border-radius: rem(25);
     grid-column-start: 2;
     justify-self: center;
-    background-color: white;
-    z-index: 4;
+    background-color: color(white-tan);
+    z-index: 1;
   }
 }

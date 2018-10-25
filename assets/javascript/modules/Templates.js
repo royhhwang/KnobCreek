@@ -11,11 +11,10 @@ ${data.slice(1).map(bourbon => `
         <h3>${bourbon.title}</h3>
         <a href='${bourbon.a}'>${bourbon.link}</a>
     </div>
-    <div id="date" style="background-color:white"></div>
 </div>
 `).join('')}
 `;
 
-document.getElementById('article--content').innerHTML = articles;
+document.getElementById('article').innerHTML = articles;
 
 export default function articleContent() { }

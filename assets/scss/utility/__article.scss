@@ -1,0 +1,20 @@
+article {
+  h3 {
+    padding: rem(27);
+  }
+  p {
+    padding: rem(30);
+  }
+}
+
+.__article {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  #article {
+    width: 82%;
+  }
+}

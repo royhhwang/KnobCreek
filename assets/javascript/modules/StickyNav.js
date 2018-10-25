@@ -1,4 +1,4 @@
-const nav = document.querySelector('.sticky-nav');
+const nav = document.querySelector('.__sticky-nav');
 const navTop = nav.offsetTop;
 
 stickyNav = () => {

@@ -1,9 +1,0 @@
-@for $i from 0 through 6 {
-  .padding-bottom-#{$i} {
-    padding-bottom: #{$i}rem;
-  }
-
-  .padding-top-#{$i} {
-    padding-top: #{$i}rem;
-  }
-}
