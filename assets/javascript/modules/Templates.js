@@ -1,11 +1,12 @@
 import data from '../data/DataSort';
 
-const markup = `
-${data.map(bourbon => `
+const articles = `
+${data.slice(1).map(bourbon => `
 <div key="${bourbon.key}">
     <img src="${bourbon.image}" alt="${bourbon.alt}" class="__image" />
-    <div class='__icon'></div>
     <div class='__card'>
+        <img src="${bourbon.icon}" alt="Article Icons" class="__small-icon" />
+        <div class="__circle"><div>&nbsp;</div></div>
         <h5 class="subpara--font">${bourbon.display}</h5>
         <h3>${bourbon.title}</h3>
         <a href='${bourbon.a}'>${bourbon.link}</a>
@@ -15,6 +16,6 @@ ${data.map(bourbon => `
 `).join('')}
 `;
 
-document.getElementById('article--content').innerHTML = markup;
+document.getElementById('article--content').innerHTML = articles;
 
-export default function tmplContent() { }
+export default function articleContent() { }

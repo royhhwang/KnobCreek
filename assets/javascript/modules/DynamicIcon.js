@@ -1,15 +1,11 @@
 const paths = [
-    {
-        
-    }
-]
+    {'icon': 'article', }
+];
 
+var svg = document.getElementsByClassName('__icon')[0];
 
-
-var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-svg.setAttribute('width', '75');
-svg.setAttribute('height', '75');
-var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-path.setAttribute('d')
+var newElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+newElement.setAttribute('width', '75');
+newElement.setAttribute('height', '75');
 
 export default DynamicIcon;
