@@ -4,21 +4,13 @@ const data = [
     // { 'image': 'url3', 'alt': 'filler-img alt', 'date': '10/11/10', 'title': 'wefeffd', 'a': 'link to article' },
 ]
 
-const markup = `
-${data.map(bourbon => `
-<div key="${bourbon.key}">
-    <img src="${bourbon.image}" alt="${bourbon.alt}" class="__image" />
-    <div class='__icon'></div>
-    <div class='__card'>
-        <h5 class="subpara--font">${bourbon.display}</h5>
-        <h2>${bourbon.title}</h2>
-        <a href='${bourbon.a}'>Read More</a>
-    </div>
-    <div id="date" style="background-color:white"></div>
-</div>
-`).join('')}
-`;
+const sortData = () => {
+    data.sort((a, b) => {
+        const c = new Date(a.date);
+        const d = new Date(b.date);
+        return [c - d];
+    })
+}
 
-document.getElementById('article--content').innerHTML = markup;
-
-export default function tmplContent() { }
+// const sortData = sortByDate;
+document.querySelector('#date').innerHTML = sortData;

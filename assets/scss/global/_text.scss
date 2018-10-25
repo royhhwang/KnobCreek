@@ -71,6 +71,8 @@ h4 {
   background-color: white;
   height: 100%;
   padding: rem(30) 0 rem(30) 0;
+  position:relative;
+  top:rem(-2);
 
   h2 {
     line-height: rem(30);
@@ -92,13 +94,13 @@ h4 {
     color: color(deep-red);
     font-weight: bolder;
   }
+}
 
-  img {
-    width: rem(25);
-    height: rem(25);
-    position: relative;
-    top: rem(-10);
-  }
+.__icon {
+  width: 82%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }
 
 .__image {
