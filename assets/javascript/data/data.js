@@ -1,5 +1,7 @@
-var fillContent = [
-    { 'author': 'Joe', 'body': 'I love this product.' },
-    { 'author': 'Mary', 'body': 'Great idea. I have got to get me one of these!' },
-    { 'author': 'Eric', 'body': 'These things are fantastic. I bought three.' }
-];
+var people = [
+    { 'name': 'Ted', 'age': '34', 'image': 'http://example1.jpg', 'favorite': 'yes' },
+    { 'name': 'Marshall', 'age': '35', 'image': 'http://example2.jpg' },
+    { 'name': 'Barney', 'age': '34', 'image': 'http://example3.jpg' }
+]
+
+export default people;
