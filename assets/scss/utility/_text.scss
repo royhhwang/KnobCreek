@@ -106,7 +106,14 @@ aside {
   }
 }
 
-.__card {
+.--featured {
+  background-color: white;
+  width: 82%;
+  height: 49vh;
+  position: relative;
+  top: rem(-50);
+  padding-top: rem(50);
+
   h2 {
     line-height: rem(30);
     padding: 0 rem(30) rem(5) rem(30);
@@ -139,17 +146,23 @@ aside {
 article {
   background-color: white;
   h3 {
-    padding: rem(30);
+    padding: rem(27);
   }
   p {
     padding: rem(30);
   }
 }
 
-#article-template {
-  height: 100vh;
-  font-size: 50px;
-  color: white;
+#article--template {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  #article--content {
+    width: 82%;
+  }
 }
 
 footer {
