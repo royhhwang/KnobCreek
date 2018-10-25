@@ -70,13 +70,14 @@ h4 {
 .__card {
   background-color: white;
   height: 100%;
-  padding: rem(30) 0 rem(30) 0;
-  position:relative;
-  top:rem(-2);
+  padding: rem(30) 0 rem(25) 0;
+  margin-bottom: rem(32);
+  position: relative;
+  top: rem(-2);
 
-  h2 {
-    line-height: rem(30);
-    padding: 0 rem(30) rem(5) rem(30);
+  h3 {
+    line-height: rem(27);
+    padding: 0 rem(10) rem(15) rem(10);
   }
 
   p {
@@ -97,14 +98,13 @@ h4 {
 }
 
 .__icon {
-  width: 82%;
   position: absolute;
   display: flex;
   justify-content: center;
 }
 
 .__image {
-  width: 100%;
-  max-height: rem(245);
-  height: 100%;
+  width: rem(262.4);
+  height: rem(260);
+  overflow: hidden;
 }
