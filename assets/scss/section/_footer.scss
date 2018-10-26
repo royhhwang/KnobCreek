@@ -1,0 +1,43 @@
+.footer {
+  color: color(dark-tan);
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.footer__list {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer__media {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer__social {
+  margin: 0 rem(15);
+  transition: fill 0.2s ease-in-out;
+
+  &:hover {
+    fill: #fff;
+  }
+
+  &.-facebook {
+    width: rem(15);
+  }
+
+  &.-twitter {
+    margin-top: rem(5);
+    width: rem(25);
+  }
+}
+
+.footer__logo {
+  width: rem(60);
+}

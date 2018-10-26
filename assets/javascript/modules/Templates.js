@@ -7,7 +7,7 @@ ${data.slice(1).map(bourbon => `
     <div class='__card'>
         <img src="${bourbon.icon}" alt="Article Icons" class="__small-icon" />
         <div class="__circle"><div>&nbsp;</div></div>
-        <h5 class="subpara--font">${bourbon.display}</h5>
+        <h5 class="font-size-xs">${bourbon.display}</h5>
         <h3>${bourbon.title}</h3>
         <a href='${bourbon.a}'>${bourbon.link}</a>
     </div>

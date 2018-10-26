@@ -1,61 +1,30 @@
-header {
-  padding: rem(5);
-}
+// *** This doesn't belong in text.scss, it's not styling any text. Also, this is too vague
+// header {
+//   padding: rem(5);
+// }
 
-section {
-  width: 100%;
-  height: 100%;
-  max-height: 82vh;
-}
 
-aside {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
+// *** BELOW IS ALL TOO GENERAL
 
-  img {
-    z-index: 2;
-    width: 82%;
-    height: 50%;
-    max-height: rem(245);
-    position: relative;
-    top: rem(-45);
-  }
-}
+// section {
+//   width: 100%;
+//   height: 100%;
+//   max-height: 82vh;
+// }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  color: color(dark-tan);
-  width: 100%;
-  height: 100%;
+// aside {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   width: 100%;
+//   height: 100%;
 
-  h5 {
-    display: inline-block;
-    padding: rem(20) 0 0 rem(5);
-    letter-spacing: rem(2);
-  }
-
-  a svg {
-    height: rem(17);
-    width: rem(18);
-    margin-left: rem(3);
-    position: relative;
-    top: rem(4);
-    fill: #b5a484;
-    transition: fill 0.2s ease-in-out;
-
-    &:hover {
-      fill: white;
-    }
-  }
-
-  img {
-    padding-bottom: rem(7);
-    margin-right: rem(5);
-    width: rem(60);
-    height: rem(60);
-  }
-}
+//   img {
+//     z-index: 2;
+//     width: 82%;
+//     height: 50%;
+//     max-height: rem(245);
+//     position: relative;
+//     top: rem(-45);
+//   }
+// }
