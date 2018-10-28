@@ -1,2 +1,2 @@
-// import './Templates.js';
+import './Templates.js';
 import './Feature.js';

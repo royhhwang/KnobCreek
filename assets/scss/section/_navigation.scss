@@ -24,16 +24,15 @@
   width: rem(95);
 
   &:hover {
-    border-color: #fff;
-    color: #fff;
+    filter: brightness(0) invert(1);
   }
 }
 
 .nav__social {
-  transition: filter 0.2s ease-in-out;
+  transition: 0.2s;
 
   &:hover {
-    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+    filter: brightness(0) invert(1);
   }
 
   &.-facebook {
@@ -46,6 +45,6 @@
   }
 
   &.-knobcreek {
-    width:rem(60);
+    width: rem(80);
   }
 }
