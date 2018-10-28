@@ -11,10 +11,6 @@
   justify-content: space-between;
 }
 
-.nav__brand {
-  width: rem(60);
-}
-
 .nav__logo {
   @include smooth;
   border: 2px solid color(dark-tan);
@@ -34,10 +30,10 @@
 }
 
 .nav__social {
-  transition: fill 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
 
   &:hover {
-    fill: #fff;
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
   }
 
   &.-facebook {
@@ -48,8 +44,8 @@
     margin-left: rem(10);
     width: rem(25);
   }
-}
 
-.aside {
-  padding: rem(5);
+  &.-knobcreek {
+    width:rem(60);
+  }
 }
