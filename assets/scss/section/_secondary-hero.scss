@@ -1,42 +1,72 @@
+.secondary-hero {
+  width: 100%;
+  height: 100%;
+  padding-bottom: rem(50);
+  display: flex;
+}
 
+.hero__section {
+  margin: -125px rem(10) 0 rem(10);
+  transition: 0.2s ease-in-out;
 
-// .__featured {
-//     width: 82%;
-//     height: 49vh;
-//     position: relative;
-//     top: rem(-50);
-//     padding-top: rem(50);
-//     transition: background-color 0.2s ease-in-out;
-//     -webkit-transition: background-color 0.2s ease-in-out;
-  
-//     h2 {
-//       line-height: rem(30);
-//       padding: 0 rem(30) rem(5) rem(30);
-//     }
-  
-//     p {
-//       line-height: rem(25);
-//       padding: 0 rem(10) rem(12) rem(10);
-//     }
-  
-//     h5 {
-//       letter-spacing: rem(2);
-//       font-weight: bolder;
-//       padding-bottom: rem(5);
-//     }
-  
-//     a {
-//       color: color(deep-red);
-//       font-weight: bolder;
-//     }
-  
-//     &:hover {
-//       @include smooth;
-//       background-color: black;
-//       color: white;
-  
-//       .__circle div {
-//         background-color: black;
-//       }
-//     }
-//   }
+  @include breakpoint("small") {
+    margin: -200px rem(20) 0 rem(20);
+  }
+
+  @include breakpoint("large") {
+    margin: -300px rem(0) 0 rem(0);
+  }
+
+  &:hover {
+    .hero__link {
+      color: #932525;
+    }
+  }
+}
+
+.hero__image {
+  width: 100%;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 400px;
+
+  @include breakpoint("medium") {
+    display: inline-block;
+    width: 49.7%;
+  }
+  @include breakpoint("large") {
+    max-height: 600px;
+  }
+}
+
+.hero__content {
+  width: 100%;
+  vertical-align: top;
+  background-color: white;
+  line-height: 1.4;
+  padding: rem(25) rem(20);
+
+  @include breakpoint("medium") {
+    display: inline-block;
+    width: 49.7%;
+    height: 400px;
+    padding: rem(50) rem(45);
+  }
+
+  @include breakpoint("large") {
+    height: 600px;
+    padding: rem(150) rem(50);
+  }
+}
+
+.hero__title {
+  @include breakpoint("large") {
+    padding: rem(20);
+  }
+}
+
+.hero__link {
+  color: color(deep-red);
+  padding: rem(10) 0;
+}

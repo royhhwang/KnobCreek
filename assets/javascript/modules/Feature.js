@@ -1,21 +1,19 @@
-// import data from '../data/DataSort';
-// var landing = data.shift();
+import data from '../data/DataSort';
+var landing = data.shift();
 
-// const featured = `
-// <section class="bg-dark-tan" key="${landing.key}">
-//     <aside>
-//         <img src="${landing.image}" alt="${landing.alt}" />
-//         <div class="__featured centered-text bg-light-tan">
-//             <img src="${landing.icon}" alt="Article Icons" class="__medium-icon" />
-//             <h5 class="font-size-xs">${landing.display}</h5>
-//             <h2>${landing.title}</h2>
-//             <p>${landing.para}</p>
-//             <a href="${landing.a}">${landing.link}</a>
-//         </div>
-//     </aside>
-// </section>
-// `;
+const featured = `
+<div class="hero__section bg-dark-tan" key="${landing.key}">
+    <img src="${landing.image}" alt="${landing.alt}" class="hero__image"/>
+    <div class="hero__content centered-text">
+        <img src="${landing.icon}" alt="Article Icons" class="hero__icon icon-med" />
+        <h5 class="hero__display font-size-xs">${landing.display}</h5>
+        <h2 class="hero__title">${landing.title}</h2>
+        <p>${landing.para}</p>
+        <a href="${landing.a}" class="hero__link">${landing.link}</a>
+    </div>
+</div>
+`;
 
-// document.getElementById('feature').innerHTML = featured;
+document.getElementById('feature').innerHTML = featured;
 
-// export default featured;
+export default featured;
