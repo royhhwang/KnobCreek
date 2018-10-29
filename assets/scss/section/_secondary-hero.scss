@@ -7,7 +7,7 @@
 
 .hero__section {
   margin: -125px rem(10) 0 rem(10);
-  transition: 0.2s ease-in-out;
+  transition: 0.25s ease-in-out;
 
   @include breakpoint("small") {
     margin: -200px rem(20) 0 rem(20);

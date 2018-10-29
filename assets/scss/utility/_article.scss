@@ -23,7 +23,7 @@
 .article__list__item {
   height: inherit;
   margin: 2rem 1rem;
-  transition: 0.2s;
+  transition: 0.25s;
   overflow: hidden;
 
   @include breakpoint(small) {
@@ -47,6 +47,7 @@
 
     .circle-icon {
       background: color(dark-gray);
+      transform: translateY(-75px);
     }
   }
 }
