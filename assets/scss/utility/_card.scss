@@ -1,0 +1,40 @@
+.card {
+  cursor: pointer;
+  height: 100%;
+}
+
+.card__content {
+  background: white;
+  height: 100%;
+  padding: rem(30);
+  text-align: center;
+  transition: 0.2s;
+
+  .emphasis-text {
+    margin-top: rem(7);
+  }
+
+  .subheading,
+  .subheading-2 {
+    margin: 0.25rem 0 0.5rem;
+  }
+
+  .red-link {
+    margin-top: 1rem;
+  }
+}
+
+.card__image {
+  min-height: 230px;
+  background-size: cover;
+  background-position: center;
+  transition: 0.2s;
+
+  @include breakpoint(medium) {
+    min-height: 260px;
+  }
+
+  @include breakpoint(large) {
+    min-height: 320px;
+  }
+}

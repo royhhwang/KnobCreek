@@ -12,23 +12,23 @@
 <body>
 
   <aside class="bg-dark-tan centered-text font-size-xs">
-    <p style="margin-left: 1.5rem;">Sponsored By</p>
+    <p>Sponsored By</p>
   </aside>
 
   <nav class="nav">
     <div class="wrapper">
       <ul class="nav__list">
-        <li>
+        <li class="nav__list__item">
           <a href="/">
             <img src="images/svg/KnobCreek.svg" alt="KnobCreek Logo" class="nav__social -knobcreek">
           </a>
         </li>
-        <li>
+        <li class="nav__list__item">
           <a href="#top" class="nav__logo">
             Logo
           </a>
         </li>
-        <li>
+        <li class="nav__list__item">
           <ul>
             <a href="#facebook">
               <img src="images/svg/facebook.svg" alt="Facebook" class="nav__social -facebook">
@@ -45,7 +45,7 @@
   <header class="header">
     <div class="wrapper">
       <div class="header__content">
-        <h1 class="header__content__title">Maple Never Tasted So Good</h1>
+        <h1 class="header__content__title main-title">Maple Never Tasted So Good</h1>
         <p>
           We blend this bourbon with natural smoked maple flavors for a unique, smoky sweetness. Full bodied,
           inviting maple notes that lift to smoke and are complemented with rich vanilla caramel. Smoked hickory and
@@ -57,24 +57,22 @@
   </header>
 
   <main>
-    <section class="secondary-hero bg-dark-tan">
+    <section class="hero bg-dark-tan">
       <div class="wrapper">
-        <div id="feature"></div>
+        <div class="hero__section" id="feature">
+        </div>
       </div>
     </section>
-    <section>
-      <div class="wrapper centered-text">
-        <h2>Recent Articles</h2>
+
+    <section class="articles">
+      <div class="wrapper">
+        <h2 class="main-heading centered-text">Recent Articles</h2>
+        <ul class="article__list" id="article">
+        </ul>
       </div>
     </section>
   </main>
 
-  <article class="article">
-    <div class="wrapper">
-      <ul class="article__list centered-text" id="article">
-      </ul>
-    </div>
-  </article>
 
   <footer class="footer font-size-xs bg-dark-gray">
     <div class="wrapper">

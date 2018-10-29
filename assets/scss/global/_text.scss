@@ -1,5 +1,6 @@
 body {
   @include OpenSans;
+  @include smooth;
   font-size: 14px;
 
   @include breakpoint("small") {
@@ -15,8 +16,8 @@ p {
   line-height: 1.9;
 }
 
-h1 {
-  font-size: $title-font-size;
+.main-title {
+  font-size: 35px;
 
   @include breakpoint("medium") {
     font-size: 60px;
@@ -27,16 +28,17 @@ h1 {
   }
 }
 
-h2 {
-  font-size: $heading-font-size;
+.main-heading {
+  font-size: 19px;
 
   @include breakpoint("small") {
     font-size: 35px;
   }
 }
 
-h3 {
-  font-size: $subheading-font-size;
+.subheading {
+  font-size: 18px;
+  line-height: 1.4;
 
   @include breakpoint("small") {
     font-size: 21px;
@@ -47,8 +49,9 @@ h3 {
   }
 }
 
-h4 {
-  font-size: $subheading2-font-size;
+.subheading-2 {
+  font-size: 17px;
+  line-height: 1.4;
 
   @include breakpoint("small") {
     font-size: 18px;
@@ -60,7 +63,7 @@ h4 {
 }
 
 .font-size-xs {
-  font-size: $subpara-font-size;
+  font-size: 12px;
 
   @include breakpoint(small) {
     font-size: 13px;
@@ -71,35 +74,18 @@ h4 {
   text-align: center;
 }
 
-.icon-xs {
-  width: rem(25);
-  height: rem(25);
-  position: relative;
-  top: rem(-35);
-  z-index: 2;
+.emphasis-text {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.icon-med {
-  position: relative;
-  width: rem(27);
-  height: rem(27);
-}
+.red-link {
+  color: color(deep-red);
+  transition: 0.2s;
 
-.article__circle__base {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: rem(-45);
-  display: grid;
-  grid-template: rem(50) / repeat(3, 1fr);
-
-  div {
-    width: rem(50);
-    height: rem(50);
-    border-radius: rem(25);
-    grid-column-start: 2;
-    justify-self: center;
-    background-color: color(white-tan);
-    z-index: 1;
+  &:hover {
+    color: darken(color(deep-red), 20%)
   }
 }

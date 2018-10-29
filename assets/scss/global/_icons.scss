@@ -1,0 +1,22 @@
+.circle-icon {
+  width: rem(60);
+  height: rem(60);
+  background: color(white-tan);
+  border-radius: 100px;
+  margin-top: rem(-60);
+  margin: rem(-60) auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  
+  .icon {
+    width: rem(20);
+  }
+}
+
+.icon {
+  width: rem(27);
+  height: rem(27);
+}

@@ -1,10 +1,4 @@
 //Variables
-$base-font-size: 14px;
-$title-font-size: 35px;
-$heading-font-size: 19px;
-$subheading-font-size: 18px;
-$subheading2-font-size: 17px;
-$subpara-font-size: 12px;
 
 // Imports
 @mixin font-face($name, $filename, $style: normal, $weight: normal) {
@@ -26,6 +20,5 @@ $subpara-font-size: 12px;
 }
 
 @mixin color-white {
-  @include smooth;
   color: #fff;
 }

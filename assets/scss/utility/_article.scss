@@ -1,86 +1,52 @@
-.article {
-  width: 100%;
-  height: 100%;
+.articles {
+  .main-heading {
+    padding-top: 2rem;
+  }
 
-  .wrapper {
-    align-items: flex-start;
-    display: flex;
-    justify-content: center;
+  .card__content {
+    background: color(white-tan);
   }
 }
 
 .article__list {
-  width: 100%;
-  display: inline-block;
+  margin-left: -1rem;
+  margin-right: -1rem;
+
+  @include breakpoint(small) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    align-items: stretch;
+  }
 }
 
-.article__card {
-  display: inline-block;
-  padding-bottom: rem(20);
-  margin: 0 auto rem(20);
-  vertical-align: top;
-  background-color: color(white-tan);
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
+.article__list__item {
+  height: inherit;
+  margin: 2rem 1rem;
+  transition: 0.2s;
+  overflow: hidden;
 
-  @include breakpoint("small") {
-    margin: rem(10);
-    width: 45%;
+  @include breakpoint(small) {
+    margin: 1rem;
+    flex-basis: calc(50% - 2rem);
   }
 
-  @include breakpoint("medium") {
-    width: 30.8%;
-    margin: rem(10);
+  @include breakpoint(medium) {
+    flex-basis: calc(33% - 2rem);
   }
 
   &:hover {
-    background-color: color(dark-gray);
-    color: white;
-
-    .article__image {
+    .card__image {
       filter: brightness(0.8);
     }
 
-    .article__circle {
+    .card__content {
       background-color: color(dark-gray);
+      color: white;
+    }
+
+    .circle-icon {
+      background: color(dark-gray);
     }
   }
-}
-
-.article__image {
-  margin: 0 auto rem(20);
-  max-width: 300px;
-  height: 300px;
-
-  @include breakpoint("small") {
-    max-width: 100%;
-    height: 400px;
-  }
-}
-
-.article__content {
-  position: relative;
-  min-height: 135px;
-  margin: 0 auto;
-  max-width: 300px;
-
-  @include breakpoint("small") {
-    min-height: 160px;
-  }
-
-  @include breakpoint("medium") {
-    min-height: 190px;
-  }
-}
-
-.article__display {
-  line-height: 1.8;
-}
-
-.article__title {
-  line-height: 1.4;
-  padding: 0 rem(15) rem(5);
-}
-.article__redirect {
-  color: color(deep-red);
 }
