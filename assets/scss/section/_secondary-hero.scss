@@ -7,7 +7,6 @@
 
 .hero__section {
   margin: -125px rem(10) 0 rem(10);
-  transition: 0.25s ease-in-out;
 
   @include breakpoint("small") {
     margin: -200px rem(20) 0 rem(20);
@@ -15,12 +14,6 @@
 
   @include breakpoint("large") {
     margin: -300px rem(0) 0 rem(0);
-  }
-
-  &:hover {
-    .hero__link {
-      color: #932525;
-    }
   }
 }
 

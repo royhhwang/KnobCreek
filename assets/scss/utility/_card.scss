@@ -8,7 +8,7 @@
   height: 100%;
   padding: rem(30);
   text-align: center;
-  transition: 0.25s;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 
   .emphasis-text {
     margin-top: rem(7);
@@ -28,7 +28,7 @@
   min-height: 230px;
   background-size: cover;
   background-position: center;
-  transition: 0.25s;
+  transition: filter 0.25s ease-in-out;
 
   @include breakpoint(medium) {
     min-height: 260px;

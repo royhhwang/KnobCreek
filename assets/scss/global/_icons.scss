@@ -10,7 +10,7 @@
   align-items: center;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
-  transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: background 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   .icon {
     width: rem(20);

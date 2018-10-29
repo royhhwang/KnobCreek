@@ -31,7 +31,7 @@
   padding: rem(9) 0;
   text-align: center;
   text-transform: uppercase;
-  transition: 0.25s;
+  transition: filter 0.25s ease-in-out;
   width: rem(95);
 
   &:hover {
@@ -40,7 +40,7 @@
 }
 
 .nav__social {
-  transition: 0.25s;
+  transition: filter 0.25s ease-in-out;
 
   &:hover {
     filter: brightness(0) invert(1);

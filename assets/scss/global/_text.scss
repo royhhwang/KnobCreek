@@ -83,7 +83,7 @@ p {
 
 .red-link {
   color: color(deep-red);
-  transition: 0.25s;
+  transition: color 0.25s ease;
 
   &:hover {
     color: darken(color(deep-red), 20%)
