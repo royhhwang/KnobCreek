@@ -1,0 +1,34 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	{% include 'header.twig' %}
+	<main>
+		<section class="hero bg-dark-tan">
+			<div class="wrapper">
+				<div class="hero__section">
+					{% include 'card.twig' with { 
+						h2Class: 'subheading',
+						post: posts | first 
+					} %}
+				</div>
+			</div>
+		</section>
+
+		<section class="articles">
+			<div class="wrapper">
+				<h2 class="main-heading centered-text">Recent Articles</h2>
+				<ul class="article__list">
+					{% for post in posts | slice(1) %}
+						<li class="article__list__item" key="{{ post.ID }}">
+							{% include 'card.twig' with { 
+								h2Class: 'subheading-2',
+								circleIcon: true,
+								post: post
+							} %}
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</section>
+  	</main>
+{% endblock %}

@@ -2,7 +2,7 @@ import data from '../data/DataSort';
 
 const articles = `
 ${data.slice(1).map(bourbon => `
-<li class="article__list__item" key="${bourbon.key}>
+<li class="article__list__item" key="${bourbon.key}">
             <div class="card">
               <div class="card__image" style="background-image: url('${bourbon.image}')"></div>
               <div class="card__content">

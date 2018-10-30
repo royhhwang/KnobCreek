@@ -1,0 +1,21 @@
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body>
+		{% set facebookImg = "wp-content/themes/rh-barrel-theme/static/images/svg/facebook.svg"  %}
+		{% set twitterImg  = "wp-content/themes/rh-barrel-theme/static/images/svg/twitter.svg"  %}
+		{% set knobImg     = "wp-content/themes/rh-barrel-theme/static/images/svg/knobcreek.svg"  %}
+		
+		{% include 'aside.twig' %}
+		{% include 'nav.twig' %}
+		{% block content %}
+		{% endblock %}
+		{% include 'footer.twig' %}
+	</body>
+
+</html>

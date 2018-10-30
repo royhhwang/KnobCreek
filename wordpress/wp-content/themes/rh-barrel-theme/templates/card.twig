@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card__image" style="background-image: url('{{ TimberImage(post.get_field('background_image')) }}')"></div>
+    <div class="card__content">
+        {% if circleIcon ?? null %}
+            <div class="circle-icon">
+        {% endif %}
+            <img src="{{ TimberImage(post.get_field('icon')).src }}" alt="Article Icons" class="icon" />
+        {% if circleIcon ?? null %}
+            </div>
+        {% endif %}
+        <p class="emphasis-text">{{ post.date }}</p>
+        <h2 class="{{ h2Class }}">{{ post.title }}</h2>
+        {% if post.content %}
+            <p>{{ post.content | striptags }}</p>
+        {% endif %}
+        <a href="{{ post.link }}" class="red-link">{{ post.get_field('text_link') }}</a>
+    </div>
+</div>
