@@ -7,7 +7,7 @@
 ## Toolbox
 
 1. WordPress - CMS with custom theme
-2. [Pantheon.io] - site deployment and management 
+2. [Pantheon.io](https://pantheon.io) - site deployment and management 
 3. Twig / Timber - PHP template engine and WordPress plugin equivalent
 5. Yoast - basic WordPress SEO optimizer
 4. Gulp - JavaScript build toolkit
